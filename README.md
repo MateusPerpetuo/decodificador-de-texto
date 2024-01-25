@@ -6,5 +6,6 @@ Usando um desgin que foi disponibilizado no Figma pela escola, eu desenvolvi a e
 
 ## O que eu aprendi?
 
+Nesse projeto eu tive o meu primeiro contato com o conceito de manipulação do DOM
 
 
