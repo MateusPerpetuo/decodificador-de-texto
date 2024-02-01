@@ -110,7 +110,7 @@ main {
     min-width: 400px;
     width: 50vw;
     height: 590px;
-    color: var(--cor-primaria);
+    color: var(--cor-bg-div);
     background-color: transparent;
     border: none;
     resize: none;
@@ -447,12 +447,12 @@ footer .desenvolvedor a{
 
     .content .botoes .criptografar{
         max-width: 50rem;
-        width: 100%; 
+        width: 105%; 
     }
 
     .content .botoes .descriptografar{
         max-width: 50rem;
-        width: 100%; 
+        width: 105%; 
     }
 
     .console{
