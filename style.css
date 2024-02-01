@@ -1,0 +1,510 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+
+:root{
+    --cor-bg: #d4f4dd;
+    --cor-bg-div: #0e7c7b ;
+    --cor-primaria: #0e7c7b;
+    --cor-secundaria: #d4f4dd;
+    --cor-terciaria: #fff;
+    --cor--texto--secundario: #495057;
+
+    --font-fam: 'Inter',sans-serif;
+}
+
+body {
+    background-color: var(--cor-bg);
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font-fam);
+}
+
+.linkbar{
+    top: 0;
+    left: 0;
+    padding: 0%;
+    width: 100vw; 
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.linkbar__navegation{
+    border-radius: 16px;
+    padding: 2%  1% 1% 1%;
+    max-width: 150px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.linkbar__navegation img{
+    margin-left: 10px;
+} 
+
+.logo_linkedin img{
+    max-width: 25px;
+    max-height: 25px;
+    width: auto;
+    height: auto;
+    margin-left: 16px;
+    transition: .7s;
+    scale: 2;
+}
+
+.logo_linkedin img:hover{
+    scale: 2.5;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.4);
+}
+
+.logo_git img{    
+    margin-left: 10px;
+    max-width: 25px;
+    max-height: 25px;
+    width: auto;
+    height: auto;
+    transition: .7s;
+    scale: 2
+}
+
+.logo_git img:hover{
+    scale: 2.5;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.4);
+}
+
+.logo_alura img{
+    filter: grayscale(100);
+    filter: brightness(0);
+    max-width: 40px;
+    max-height: 40px;
+    width: auto;
+    height: auto;
+    scale: 2.6;
+    margin-top: 5px;
+    transition: .7s;
+}
+
+.logo_alura img:hover{
+    scale: 2.9;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.4);
+}
+
+.linkbar__navegation img {
+    box-shadow: var(--cor-primaria);
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    
+    gap: 40px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content__texto_usuario textarea {
+    font-family: var(--font-fam);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 680px;
+    min-width: 400px;
+    width: 50vw;
+    height: 590px;
+    color: var(--cor-primaria);
+    background-color: transparent;
+    border: none;
+    resize: none;
+}
+
+.content__texto_usuario textarea:focus {
+    outline: none;
+}
+
+.content .alerta {
+    font-size: 1rem;
+    color: var(--cor--texto--secundario);
+}
+
+.content .alerta .alert {
+    display: flex;
+    gap: 10px;
+}
+
+.content .alert .alert img{
+    width: 16px;
+    height: 16px;
+}
+
+.content .botoes{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+}
+
+.content .botoes .criptografar{
+    background-color: var(--cor-primaria);
+    color:  var(--cor-bg);
+    border-radius: 24px;
+    padding: 10px 15px; 
+    max-width: 328px; 
+    min-width: 150px;
+    width: 60%;
+    height: 67px;
+    text-align: center;
+    font-family: var(--font-fam);
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    letter-spacing: 1px;
+    transition: 1s;
+}
+
+.content .botoes .criptografar:hover{
+    letter-spacing: 2px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.4);
+}
+
+.content .botoes .descriptografar{
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+    border-radius: 24px;
+    padding: 10px 15px;
+    max-width: 328px; 
+    min-width: 150px;
+    width: 60%;
+    height: 67px; 
+    text-align: center;
+    font-family: var(--font-fam);
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: 1s;
+    letter-spacing: 1px;
+}
+
+.content .botoes .descriptografar:hover{
+    letter-spacing: 2px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.4);
+}
+
+.console {
+    background-color: var(--cor-bg-div);
+    max-width: 400px;
+    max-height: 700px;
+    height: 95vh;
+    width: 50vw;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.4);
+    
+}
+
+
+.console .inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px; 
+    overflow: hidden;
+}
+
+.console .inicio img {
+    padding: 30% 10% 5% 10%;
+}
+
+.saida .console .inicio .texto{
+    padding: 5% 10%;
+}
+
+.saida .console .inicio .nenhumaMensagem{
+    color: var(--cor-bg);
+    text-align: center;
+    font-family: var(--font-fam);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    padding-top: 30px;
+}
+
+.saida .console .inicio .digiteOTexto{
+    margin-top: -1.5rem;
+    text-align: center;
+    font-family: var(--font-fam);
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--cor-bg);;
+}
+.elementos__saida{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    gap: 40px;
+} 
+
+.console .output textarea {
+    margin: 2rem;
+    font-family: var(--font-fam);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: justify;
+    height: 520px;
+    width: 336px;
+    background-color: transparent;
+    resize: none;
+    color: var(--cor-primaria);
+    background-color: transparent;
+    border: none;
+    resize: none;
+}
+
+.console .output textarea:focus {
+    outline: none;
+}
+
+#copiar{
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+    border-radius: 24px;
+    padding: 10px 15px;
+    width: 336px;
+    height: 67px; 
+    text-align: center;
+    font-family: var(--font-fam);
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: 1s;
+    letter-spacing: 1px;
+    margin: 0 32px 32px 32px;
+}
+
+#copiar:hover{
+    letter-spacing: 1.5px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.4);
+}
+
+footer{
+    background-color:var(--cor-primaria);
+    width: 100vw;
+    margin-top: 3rem;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+}
+
+footer .desenvolvedor{
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--font-fam);
+    font-size: 1rem;
+}
+
+footer .desenvolvedor a{
+    text-decoration:  none;
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--font-fam);
+    font-size: 1rem;
+}
+
+/* TABLET */
+
+@media (max-width: 76.37rem) {
+
+    body {
+        max-width: 98%;
+        width: 97%;
+        height: 100%;
+    }
+
+    main {
+        flex-direction: column;        
+        gap: 1rem;
+    }
+
+    .content{
+        padding: 1rem 1rem;
+        justify-items: center;
+    }
+
+    .content__texto_usuario textarea {
+        max-width: 79rem;
+        width: 98%;
+        height: 400px;
+    }
+
+    .content .botoes{
+        margin-right: 1rem;
+    }
+
+    .content .botoes .criptografar{
+        max-width: 34rem;
+        width: 60%; 
+    }
+
+    .content .botoes .descriptografar{
+        max-width: 34rem;
+        width: 60%; 
+    }
+
+    .console{
+        margin: 1rem 1rem;
+        max-width: 73rem;
+        width: 96%;
+        max-height: 30rem;
+        height: auto;
+    }
+
+    .console .inicio img {
+        display: none;
+        gap: 2rem;
+    }
+
+    .saida .console .inicio .texto{
+        padding: 3% 10%;
+    }
+    
+    .saida .console .inicio .nenhumaMensagem{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    
+    .saida .console .inicio .digiteOTexto{
+        font-size: 1.5rem;
+        font-weight: 400;
+        
+    }
+    .elementos__saida {
+        align-items: center;
+    }
+
+    .console .output textarea {
+        max-width: 73rem;
+        width: 90%;
+        min-width: 15rem;
+        max-height: 25rem;
+        height: 15rem;
+    }
+
+    #copiar{
+        max-width: 70rem;
+        min-width: 30rem;
+        width: 90%; 
+        
+    } 
+
+    footer {
+        position: relative;
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+}
+
+
+
+
+/* SMARTPHONE */
+
+@media (max-width: 40.56rem) {
+    body{
+        width: 99%;
+    }
+
+    .linkbar__navegation img{
+        margin: .5rem 1rem 0 1rem;
+    } 
+
+    .content{
+        padding: 1rem 1rem;
+        justify-items: center;
+    }
+
+    .content__texto_usuario textarea {
+        min-width: 40vw;
+        width: 95%;
+        height: 300px;
+    }
+
+    .content .botoes{
+        margin-right: 1rem;
+        flex-direction: column;
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .content .botoes .criptografar{
+        max-width: 50rem;
+        width: 100%; 
+    }
+
+    .content .botoes .descriptografar{
+        max-width: 50rem;
+        width: 100%; 
+    }
+
+    .console{
+        margin: 1rem 1rem;
+        max-width: 39rem;
+        min-width: 91vw;
+        width: 90%; 
+        height: auto;
+    }
+
+    .saida .console .inicio .texto{
+        padding: 3% 10%;
+    }
+    
+    .saida .console .inicio .nenhumaMensagem{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .saida .console .inicio .digiteOTexto{
+        font-size: 1.2rem;
+        font-weight: 400;
+        
+    }
+    .elementos__saida {
+        align-items: center;
+    }
+
+    .console .output textarea {
+        max-width: 73rem;
+        min-width: none;
+        width: 80vw;
+        min-height: 50px;
+        max-height: 40rem;
+        height: 15rem;
+    }
+
+    #copiar{
+        max-width: 40rem;
+        min-width: 30vw;
+        width: 80vw;  
+    } 
+
+    footer {
+        position: relative;
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+}
+
+

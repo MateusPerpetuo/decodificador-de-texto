@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Codificador de texto</title>
+
+</head>
+
+<body>
+    <div class="linkbar">
+        <nav class="linkbar__navegation">
+
+            <div class="logo_git">
+                <a href="https://github.com/MateusPerpetuo" target="_blank">
+                    <img src="/imgs/logo_github.svg" alt="Logo do GitHub">
+                </a>
+
+            </div>
+
+            <div class="logo_linkedin">
+                <a href="https://www.linkedin.com/in/mateusperpetuo/" target="_blank">
+                    <img src="/imgs/logo_linkedin.svg" alt="Logo do LinkedIn">
+                </a>
+            </div>
+            
+            <div class="logo_alura">
+                <a href="https://cursos.alura.com.br/user/mateusperpetuo" target="_blank">
+                    <img src="/imgs/logo_alura.svg" alt="Logo da Alura">
+                </a>
+                
+            </div>
+        </nav>
+    </div>
+    <main>
+        <section class="content">
+
+            <div class="content__texto_usuario" >
+                <textarea name="text_user" id="insert_usuario" cols="30" rows="10" placeholder="Digite o seu texto"></textarea>
+                
+            </div>
+            
+            <div class="alerta">
+                <span class="alert"><img src="/imgs/exclamation-circle-fill.svg" alt="Icone de exclamação indicando um aviso"> 
+                    Use apenas letras minúsculas e sem acento.</span>
+            </div>
+            <div class="botoes">
+                <button onclick=" criptografar()" class="criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="descriptografar">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="saida">
+
+            <div class="console">
+
+                <section class="elementos__saida">
+                    <div class="output" id="output"></div>
+                </section>
+
+                <div class="inicio" id="msgConsoleInicio">
+                    <img src="/imgs/no_text.svg" alt="Figura de um homem procurando algo com uma lupa-">
+                    <p class="nenhumaMensagem texto">Nenhuma mensagem encontrada</p>
+                    <p class="digiteOTexto texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="desenvolvedor">
+            <p>Desenvolvidor por <a href="https://www.linkedin.com/in/mateusperpetuo/">Mateus Perpetuo</a>, 2024.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
