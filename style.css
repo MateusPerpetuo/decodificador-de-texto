@@ -22,13 +22,11 @@ body {
     top: 0;
     left: 0;
     padding: 0%;
-    width: 100vw; 
-    backdrop-filter: blur(10px);
+    width: 100vw;
     z-index: 1;
 }
 
 .linkbar__navegation{
-    border-radius: 16px;
     padding: 2%  1% 1% 1%;
     max-width: 150px;
     display: flex;
@@ -42,49 +40,47 @@ body {
 } 
 
 .logo_linkedin img{
-    max-width: 25px;
-    max-height: 25px;
+    margin-left: 10px;
+    max-width: 50px;
+    max-height: 50px;
     width: auto;
     height: auto;
-    margin-left: 16px;
     transition: .7s;
-    scale: 2;
+    background-color: transparent;
 }
 
 .logo_linkedin img:hover{
-    scale: 2.5;
+    scale: 1.2;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.4);
 }
 
 .logo_git img{    
     margin-left: 10px;
-    max-width: 25px;
-    max-height: 25px;
+    max-width: 50px;
+    max-height: 50px;
     width: auto;
     height: auto;
     transition: .7s;
-    scale: 2
+    background-color: transparent;
 }
 
 .logo_git img:hover{
-    scale: 2.5;
+    scale: 1.2;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.4);
 }
 
 .logo_alura img{
-    filter: grayscale(100);
-    filter: brightness(0);
-    max-width: 40px;
-    max-height: 40px;
+    margin-left: 10px;
+    max-width: 50px;
+    max-height: 50px;
     width: auto;
     height: auto;
-    scale: 2.6;
-    margin-top: 5px;
     transition: .7s;
+    background-color: transparent;
 }
 
 .logo_alura img:hover{
-    scale: 2.9;
+    scale: 1.2;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.4);
 }
 
@@ -266,7 +262,7 @@ main {
     width: 336px;
     background-color: transparent;
     resize: none;
-    color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     background-color: transparent;
     border: none;
     resize: none;
